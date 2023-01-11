@@ -78,7 +78,7 @@
                 </li>
             </ul>
         </li>
-        <li>
+        {{-- <li>
             <a class="has-arrow" href="javascript:;">
                 <div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
                 </div>
@@ -120,8 +120,8 @@
                 <li> <a href="component-avtars-chips.html"><i class="bx bx-right-arrow-alt"></i>Avatrs & Chips</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> --}}
+        {{-- <li>
             <a class="has-arrow" href="javascript:;">
                 <div class="parent-icon"><i class="bx bx-repeat"></i>
                 </div>
@@ -135,8 +135,8 @@
                 <li> <a href="content-text-utilities.html"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> --}}
+        {{-- <li>
             <a class="has-arrow" href="javascript:;">
                 <div class="parent-icon"> <i class="bx bx-donate-blood"></i>
                 </div>
@@ -150,8 +150,8 @@
                 <li> <a href="icons-feather-icons.html"><i class="bx bx-right-arrow-alt"></i>Feather Icons</a>
                 </li>
             </ul>
-        </li>
-        <li class="menu-label">Forms & Tables</li>
+        </li> --}}
+        {{-- <li class="menu-label">Forms & Tables</li>
         <li>
             <a class="has-arrow" href="javascript:;">
                 <div class="parent-icon"><i class='bx bx-message-square-edit'></i>
@@ -178,7 +178,7 @@
                 <li> <a href="form-select2.html"><i class="bx bx-right-arrow-alt"></i>Select2</a>
                 </li>
             </ul>
-        </li>
+        </li> --}}
         <li>
             <a class="has-arrow" href="javascript:;">
                 <div class="parent-icon"><i class="bx bx-grid-alt"></i>
@@ -230,7 +230,7 @@
                 <div class="menu-title">Timeline</div>
             </a>
         </li>
-        <li>
+        {{-- <li>
             <a class="has-arrow" href="javascript:;">
                 <div class="parent-icon"><i class="bx bx-error"></i>
                 </div>
@@ -246,15 +246,15 @@
                 <li> <a href="error-blank-page.html" target="_blank"><i class="bx bx-right-arrow-alt"></i>Blank Page</a>
                 </li>
             </ul>
-        </li>
-        <li>
+        </li> --}}
+        {{-- <li>
             <a href="faq.html">
                 <div class="parent-icon"><i class="bx bx-help-circle"></i>
                 </div>
                 <div class="menu-title">FAQ</div>
             </a>
-        </li>
-        <li>
+        </li> --}}
+        {{-- <li>
             <a href="pricing-table.html">
                 <div class="parent-icon"><i class="bx bx-diamond"></i>
                 </div>
@@ -315,15 +315,15 @@
                 <div class="parent-icon"><i class="bx bx-folder"></i>
                 </div>
                 <div class="menu-title">Documentation</div>
-            </a>
+            </a> --}}
         </li>
-        <li>
+        {{-- <li>
             <a href="https://themeforest.net/user/codervent" target="_blank">
                 <div class="parent-icon"><i class="bx bx-support"></i>
                 </div>
                 <div class="menu-title">Support</div>
             </a>
-        </li>
+        </li> --}}
     </ul>
     <!--end navigation-->
 </div>
