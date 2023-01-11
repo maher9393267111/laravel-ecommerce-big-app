@@ -9,7 +9,7 @@ class AdminController extends Controller
     //
     public function adminDash()
     {
-        return view('admin.admin_dash'
-    );
+        return view('admin.index');
+    
     }
 }
