@@ -53,6 +53,7 @@ Route::middleware(['auth','role:admin'])->group(function () {
 
 // admin Login page
 Route::get('/admin/login', [AdminController::class, 'AdminLogin']);
+Route::get('/vendor/login', [VendorController::class, 'VendorLogin']);
 
 
 
@@ -61,7 +62,7 @@ Route::middleware(['auth','role:vendor'])->group(function () {
 
 
     Route::get('/vendor/dashboard', [VendorController::class, 'vendorDash'])->name('vendor.dashboard');
-
+    Route::get('/vendor/logout', [VendorController::class, 'VendorDestroy'])->name('vendor.logout');
 
 
 
