@@ -109,8 +109,9 @@
 			$('#example').DataTable();
 		  } );
 	</script>
-<!--Datatable-->
 
+<!--Datatable-->
+ <script src="{{ asset('adminbackend/assets/js/validate.min.js') }}"></script>
 
 
 
