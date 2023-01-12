@@ -5,7 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\VendorController;
 use App\Http\Controllers\UserController;
+
 use App\Http\Controllers\Backend\BrandController;
+use App\Http\Controllers\Backend\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -122,6 +124,19 @@ Route::middleware(['auth','role:admin'])->group(function() {
    
    
    
+//Categories
+
+Route::controller(CategoryController::class)->group(function(){
+    Route::get('/all/category' , 'AllCategory')->name('all.category');
+    Route::get('/add/category' , 'AddCategory')->name('add.category');
+    Route::post('/store/category' , 'StoreCategory')->name('store.category');
+
+
+
+});
+
+
+
    
    
    }); // End Middleware 

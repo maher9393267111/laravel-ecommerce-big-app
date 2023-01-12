@@ -85,13 +85,14 @@
             <a class="has-arrow" href="javascript:;">
                 <div class="parent-icon"><i class="bx bx-grid-alt"></i>
                 </div>
-                <div class="menu-title">Tables</div>
+                <div class="menu-title">Categories</div>
             </a>
             <ul>
-                <li> <a href="table-basic-table.html"><i class="bx bx-right-arrow-alt"></i>Basic Table</a>
+                <li> <a href="{{ route('all.category') }}"><i class="bx bx-right-arrow-alt"></i>All Categories</a>
                 </li>
-                <li> <a href="table-datatable.html"><i class="bx bx-right-arrow-alt"></i>Data Table</a>
-                </li>
+               
+
+                <li> <a href="{{ route('add.category') }}"><i class="bx bx-right-arrow-alt"></i>Add Category</a>
             </ul>
         </li>
         <li class="menu-label">Pages</li>
