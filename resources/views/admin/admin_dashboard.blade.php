@@ -25,7 +25,11 @@
 	<!-- DataTable -->
 	<link href="{{ asset('adminbackend/assets/plugins/datatable/css/dataTables.bootstrap5.min.css') }}" rel="stylesheet" />
 <!-- DataTable-->
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
+	
+
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
 	<title>Admin Dashboard</title>
 </head>
 <body>
@@ -112,6 +116,12 @@
 
 <!--Datatable-->
  <script src="{{ asset('adminbackend/assets/js/validate.min.js') }}"></script>
+
+
+
+{{-- // SewwtAlert alert --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+ <script src="{{ asset('adminbackend/assets/js/code.js') }}"></script>
 
 
 
