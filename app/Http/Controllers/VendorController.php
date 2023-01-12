@@ -9,7 +9,7 @@ class VendorController extends Controller
     //
     public function vendorDash()
     {
-        return view('vendor.vendor_dash'
+        return view('vendor.index'
     );
     }
 }
