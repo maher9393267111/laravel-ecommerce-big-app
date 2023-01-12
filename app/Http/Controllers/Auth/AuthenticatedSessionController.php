@@ -39,10 +39,10 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        //   $notification = array(
-        //     'message' => 'Login Successfully',
-        //     'alert-type' => 'success'
-        // );
+          $notification = array(
+            'message' => 'Login Successfully',
+            'alert-type' => 'success'
+        );
 
         $url = '';
         if ($request->user()->role === 'admin') {
@@ -55,7 +55,7 @@ class AuthenticatedSessionController extends Controller
 
         //->with($notification)
 
-        return redirect()->intended($url);
+        return redirect()->intended($url)->with($notification);
     }
 
 
