@@ -26,6 +26,7 @@ Route::get('/', function () {
 // })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/dashboard', [UserController::class, 'UserDashboard'])->name('dashboard');
+Route::post('/user/profile/store', [UserController::class, 'UserProfileStore'])->name('user.profile.store');
 
 
 

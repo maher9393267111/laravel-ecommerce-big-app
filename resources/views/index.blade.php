@@ -46,6 +46,10 @@
     <div class="card">
         <div class="card-header">
             <h3 class="mb-0">Hello {{ Auth::user()->name }}</h3>
+
+            <br>
+            <img id="showImage" src="{{ (!empty($userData->photo)) ? url('upload/user_images/'.$userData->photo):url('upload/no_image.jpg') }}" alt="User" class="rounded-circle p-1 bg-primary" width="110">
+
         </div>
         <div class="card-body">
             <p>
@@ -166,8 +170,11 @@
             <h5>Account Details</h5>
         </div>
         <div class="card-body">
-            <p>Already have an account? <a href="page-login.html">Log in instead!</a></p>
+            {{-- <p>Already have an account? <a href="page-login.html">Log in instead!</a></p> --}}
            
+
+            <form method="post" action="{{ route('user.profile.store') }}" enctype="multipart/form-data" >
+                @csrf
             <div class="row">
                 <div class="form-group col-md-6">
                     <label>User Name <span class="required">*</span></label>
@@ -189,23 +196,35 @@
                     <label>Address <span class="required">*</span></label>
                     <input required="" class="form-control" name="address" type="text" value="{{ $userData->address }}" />
                 </div>
+
+
+
+
+                
                 <div class="form-group col-md-12">
                     <label>User Photo <span class="required">*</span></label>
                     <input class="form-control" name="photo" type="file"  id="image" />
                 </div>
             
+
+
+            
                   <div class="form-group col-md-12">
                     <label>  <span class="required">*</span></label>
                     <img id="showImage" src="{{ (!empty($userData->photo)) ? url('upload/user_images/'.$userData->photo):url('upload/no_image.jpg') }}" alt="User" class="rounded-circle p-1 bg-primary" width="110">
                 </div>
-            
-            
+             
+
+             
+
+
             
                 <div class="col-md-12">
                     <button type="submit" class="btn btn-fill-out submit font-weight-bold" name="submit" value="Submit">Save Change</button>
                 </div>
             </div>
 
+            </form>
 
 
         </div>
@@ -218,5 +237,22 @@
                 </div>
             </div>
         </div>
+
+
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#image').change(function(e){
+                    console.log('Change image')
+                    var reader = new FileReader();
+                    reader.onload = function(e){
+                        $('#showImage').attr('src',e.target.result);
+                    }
+                    reader.readAsDataURL(e.target.files['0']);
+                });
+            });
+        </script>
+
+
 
 @endsection
