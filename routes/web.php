@@ -8,6 +8,7 @@ use App\Http\Controllers\UserController;
 
 use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\SubCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -138,6 +139,24 @@ Route::controller(CategoryController::class)->group(function(){
 
 
 });
+
+
+ // Category All Route 
+ // Category All Route 
+ Route::controller(SubCategoryController::class)->group(function(){
+    Route::get('/all/subcategory' , 'AllSubCategory')->name('all.subcategory');
+    Route::get('/add/subcategory' , 'AddSubCategory')->name('add.subcategory');
+    Route::post('/store/subcategory' , 'StoreSubCategory')->name('store.subcategory');
+    Route::get('/edit/subcategory/{id}' , 'EditSubCategory')->name('edit.subcategory');
+    Route::post('/update/subcategory' , 'UpdateSubCategory')->name('update.subcategory');
+    Route::get('/delete/subcategory/{id}' , 'DeleteSubCategory')->name('delete.subcategory');
+
+    Route::get('/subcategory/ajax/{category_id}' , 'GetSubCategory');
+
+});
+
+
+
 
 
 
