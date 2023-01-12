@@ -106,4 +106,10 @@ public function VendorUpdatePassword(Request $request){
     } // End Mehtod 
 
 
+    public function BecomeVendor(){
+        return view('auth.become_vendor');
+    } // End Mehtod 
+
+
+
 }
