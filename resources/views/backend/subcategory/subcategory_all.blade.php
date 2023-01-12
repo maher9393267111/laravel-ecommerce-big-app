@@ -1,6 +1,8 @@
 @extends('admin.admin_dashboard')
 @section('admin')
 
+
+
 <div class="page-content">
 				<!--breadcrumb-->
 				<div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
@@ -43,12 +45,12 @@
 				<td> {{ $item->subcategory_name }}  </td>
 				
 				<td>
- @if(Auth::user()->can('subcategory.edit'))
+ {{-- @if(Auth::user()->can('subcategory.edit')) --}}
 <a href="{{ route('edit.subcategory',$item->id) }}" class="btn btn-info">Edit</a>
-@endif
- @if(Auth::user()->can('subcategory.delete'))
+{{-- @endif --}}
+ {{-- @if(Auth::user()->can('subcategory.delete')) --}}
 <a href="{{ route('delete.subcategory',$item->id) }}" class="btn btn-danger" id="delete" >Delete</a>
-@endif
+{{-- @endif --}}
 				</td> 
 			</tr>
 			@endforeach

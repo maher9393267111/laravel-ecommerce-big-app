@@ -26,7 +26,7 @@
 	<link href="{{ asset('adminbackend/assets/plugins/datatable/css/dataTables.bootstrap5.min.css') }}" rel="stylesheet" />
 <!-- DataTable-->
 	
-
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 
 
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
